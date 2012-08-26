@@ -119,6 +119,8 @@ public class AwsS3Service extends AbstractLifecycleComponent<AwsS3Service> {
                 endpoint = "s3-eu-west-1.amazonaws.com";
             } else if ("eu-west-1".equals(region)) {
                 endpoint = "s3-eu-west-1.amazonaws.com";
+            } else if ("sdsc".equals(region)) {
+                endpoint = "s3.cloud.sdsc.edu";
             } else {
                 throw new ElasticSearchIllegalArgumentException("No automatic endpoint could be derived from region [" + region + "]");
             }
